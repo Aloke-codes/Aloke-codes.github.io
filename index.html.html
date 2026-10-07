@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aloke Chettri | BCA Student | Data Research & Lead Generation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef1f5;
+            color: #1d2433;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 900px;
+            max-width: 94%;
+            margin: 40px auto;
+            background: #ffffff;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.10);
+            border-radius: 14px;
+            overflow: hidden;
+        }
+
+        /* ================= HEADER ================= */
+
+        .header {
+            background: linear-gradient(135deg, #111827, #1e3a8a);
+            color: white;
+            padding: 42px 50px;
+        }
+
+        .header h1 {
+            font-size: 38px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .header .role {
+            font-size: 17px;
+            color: #c7d2fe;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+            color: #e5e7eb;
+        }
+
+        .contact span {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /* ================= CONTENT ================= */
+
+        .content {
+            padding: 40px 50px;
+        }
+
+        .section {
+            margin-bottom: 34px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #1e3a8a;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 18px;
+        }
+
+        .summary {
+            font-size: 15px;
+            color: #4b5563;
+        }
+
+        /* ================= SKILLS ================= */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .skill {
+            background: #eef2ff;
+            color: #1e3a8a;
+            border: 1px solid #dbeafe;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* ================= PROJECTS ================= */
+
+        .project {
+            margin-bottom: 25px;
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 20px;
+        }
+
+        .project h3 {
+            font-size: 17px;
+            color: #111827;
+        }
+
+        .project-date {
+            font-size: 13px;
+            color: #6b7280;
+            white-space: nowrap;
+        }
+
+        .project ul {
+            margin-top: 8px;
+            padding-left: 20px;
+        }
+
+        .project li {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #4b5563;
+        }
+
+        /* ================= EDUCATION ================= */
+
+        .education-item {
+            margin-bottom: 22px;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .education-item h3 {
+            font-size: 17px;
+            color: #111827;
+        }
+
+        .institution {
+            color: #1e3a8a;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .education-details {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        /* ================= TWO COLUMN ================= */
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .list {
+            padding-left: 20px;
+        }
+
+        .list li {
+            margin-bottom: 7px;
+            font-size: 14px;
+            color: #4b5563;
+        }
+
+        /* ================= FOOTER ================= */
+
+        .footer {
+            background: #f8fafc;
+            border-top: 1px solid #e5e7eb;
+            padding: 20px 50px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 13px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 700px) {
+
+            .container {
+                margin: 15px auto;
+                max-width: 96%;
+            }
+
+            .header {
+                padding: 30px 25px;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+
+            .content {
+                padding: 30px 25px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .project-header {
+                flex-direction: column;
+                gap: 2px;
+            }
+
+            .footer {
+                padding: 20px 25px;
+            }
+        }
+
+        /* ================= PRINT ================= */
+
+        @media print {
+
+            body {
+                background: white;
+            }
+
+            .container {
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .header {
+                background: #111827 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .skill {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <h1>ALOKE CHETTRI</h1>
+
+        <div class="role">
+            BCA Student | Lead Generation & Data Research
+        </div>
+
+        <div class="contact">
+
+            <span>📍 Phagwara, Punjab</span>
+
+            <span>📞 +91-8536981644</span>
+
+            <span>✉️ chettrialoke91@gmail.com</span>
+
+           
+
+        </div>
+
+    </header>
+
+
+    <main class="content">
+
+        <!-- ================= SUMMARY ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Professional Summary
+            </h2>
+
+            <p class="summary">
+
+                BCA student with a strong interest in lead generation,
+                web research, business research and data organization.
+                Skilled in collecting, verifying and organizing
+                information from publicly available online sources.
+                Familiar with Excel/Google Sheets, SQL, AI tools and
+                basic programming, with a strong willingness to learn
+                data research and lead-generation tools in a
+                professional environment.
+
+            </p>
+
+        </section>
+
+
+        <!-- ================= CORE SKILLS ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Core Skills
+            </h2>
+
+            <div class="skills">
+
+                <span class="skill">Lead Generation</span>
+                <span class="skill">Web Research</span>
+                <span class="skill">Business Research</span>
+                <span class="skill">Data Collection</span>
+                <span class="skill">Data Verification</span>
+                <span class="skill">Prospect List Building</span>
+                <span class="skill">Google Maps Research</span>
+                <span class="skill">Internet Research</span>
+                <span class="skill">Data Cleaning</span>
+                <span class="skill">Excel</span>
+                <span class="skill">Google Sheets</span>
+                <span class="skill">Information Extraction</span>
+                <span class="skill">AI-Assisted Research</span>
+                <span class="skill">Data Organization</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TECHNICAL SKILLS ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+            <div class="two-column">
+
+                <div>
+
+                    <ul class="list">
+
+                        <li>
+                            <strong>Languages:</strong>
+                            C++, Python (Basic), SQL
+                        </li>
+
+                        <li>
+                            <strong>Web:</strong>
+                            HTML, CSS
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <ul class="list">
+
+                        <li>
+                            <strong>Tools:</strong>
+                            Excel, Google Sheets, Git/GitHub, Canva
+                        </li>
+
+                        <li>
+                            <strong>Other:</strong>
+                            AI Tools, Online Research, Data Organization
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Projects
+            </h2>
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="project">
+
+                <div class="project-header">
+
+                    <h3>
+                        Business Lead Generation & Data Research
+                    </h3>
+
+                    <span class="project-date">
+                        Personal Project | 2026
+                    </span>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        Researched businesses using Google Maps and
+                        publicly available online sources.
+                    </li>
+
+                    <li>
+                        Collected and organized business information
+                        including company name, location, website,
+                        contact details and social profiles.
+                    </li>
+
+                    <li>
+                        Created structured prospect databases using
+                        Excel/Google Sheets.
+                    </li>
+
+                    <li>
+                        Verified collected information and removed
+                        duplicate or inaccurate records.
+                    </li>
+
+                    <li>
+                        Categorized prospects based on business type
+                        and location.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="project">
+
+                <div class="project-header">
+
+                    <h3>
+                        Digital Inventory Management System
+                    </h3>
+
+                    <span class="project-date">
+                        Academic / Personal Project | 2026
+                    </span>
+
+                </div>
+
+                <ul>
+
+                    <li>
+                        Developed a digital system for organizing and
+                        managing inventory information.
+                    </li>
+
+                    <li>
+                        Worked with structured data, search functionality
+                        and data organization.
+                    </li>
+
+                    <li>
+                        Applied programming and database concepts to
+                        improve information management.
+                    </li>
+
+                    <li>
+                        Explored backend integration and database
+                        connectivity.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+
+            <div class="education-item">
+
+                <h3>
+                    Bachelor of Computer Applications (BCA)
+                </h3>
+
+                <div class="institution">
+                    Lovely Professional University, Punjab
+                </div>
+
+                <div class="education-details">
+                    2025 – Present &nbsp; | &nbsp;
+                    Current TGPA: 8.00
+                </div>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <h3>
+                    Class XII — CBSE
+                </h3>
+
+                <div class="institution">
+                    Army Public School Bengdubi
+                </div>
+
+                <div class="education-details">
+                    Percentage: 70%
+                </div>
+
+            </div>
+
+
+            <div class="education-item">
+
+                <h3>
+                    Class X — CBSE
+                </h3>
+
+                <div class="institution">
+                    Army Public School Bengdubi
+                </div>
+
+                <div class="education-details">
+                    Percentage: 94%
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COURSEWORK + ACTIVITIES ================= -->
+
+        <section class="section">
+
+            <div class="two-column">
+
+
+                <div>
+
+                    <h2 class="section-title">
+                        Relevant Coursework
+                    </h2>
+
+                    <ul class="list">
+
+                        <li>Database Management Systems</li>
+                        <li>SQL</li>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Web Development</li>
+                        <li>Computer Networks</li>
+                        <li>Object-Oriented Programming</li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h2 class="section-title">
+                        Activities
+                    </h2>
+
+                    <ul class="list">
+
+                        <li>
+                            Organized and managed college-level
+                            eFootball tournaments.
+                        </li>
+
+                        <li>
+                            Participated in college football and
+                            futsal activities.
+                        </li>
+
+                        <li>
+                            Worked on technology-based academic
+                            and personal projects.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= AVAILABILITY ================= -->
+
+        <section class="section">
+
+            <h2 class="section-title">
+                Additional Information
+            </h2>
+
+            <div class="two-column">
+
+                <div>
+
+                    <ul class="list">
+
+                        <li>
+                            <strong>Availability:</strong>
+                            Part-time / Internship / Freelance
+                        </li>
+
+                        <li>
+                            <strong>Work Preference:</strong>
+                            Remote / Hybrid
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div>
+
+                    <ul class="list">
+
+                        <li>
+                            <strong>Languages:</strong>
+                            English, Hindi, Nepali
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        © 2026 Aloke Chettri · Lead Generation & Data Research
+
+    </footer>
+
+</div>
+
+</body>
+</html>
